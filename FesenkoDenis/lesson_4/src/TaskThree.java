@@ -8,7 +8,7 @@ public class TaskThree {
         String msg = third == 2 ? Integer.toBinaryString(pow)
                 : third == 8 ? Integer.toOctalString(pow)
                 : third == 16 ? Integer.toHexString(pow)
-                : "An uncorrect number";
+                : "An incorrect number";
         System.out.println(msg);
     }
 }

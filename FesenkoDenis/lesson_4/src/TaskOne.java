@@ -4,4 +4,4 @@ public class TaskOne {
 		int sum = Integer.parseInt(params[0])+Integer.parseInt(params[1]);
 		System.out.println("Summ: " + sum);
 	}
-} 
+}
