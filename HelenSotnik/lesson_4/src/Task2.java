@@ -1,14 +1,10 @@
-import java.util.Scanner;
 public class Task2 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter integer a: ");
-        int a = scanner.nextInt();
-        System.out.println("Enter integer b: ");
-        int b = scanner.nextInt();
-        System.out.println("Enter integer c: ");
-        int c = scanner.nextInt();
-        int max = (a * b > a * c) ? ((a > b) ? a : b) : ((a > c) ? a : c);
+        int a, b, c;
+        a = Integer.parseInt(args[0]);
+        b = Integer.parseInt(args[1]);
+        c = Integer.parseInt(args[2]);
+        int max = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
         System.out.println("The highest number is " + max);
     }
 }

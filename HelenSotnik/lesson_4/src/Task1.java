@@ -1,11 +1,7 @@
-import java.util.Scanner;
 public class Task1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter integer a: ");
-        int a = scanner.nextInt();
-        System.out.println("Enter integer b: ");
-        int b = scanner.nextInt();
+        int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
         System.out.println("Sum of a and b: " + (a + b));
     }
 }

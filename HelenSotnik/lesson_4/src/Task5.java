@@ -1,20 +1,13 @@
-import java.util.Scanner;
 public class Task5 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter 1st football team name: ");
-        String a1 = scanner.nextLine();
-        System.out.println("Enter 2nd football team name: ");
-        String b1 = scanner.nextLine();
-        System.out.println("Enter score of " + a1 + " team: ");
-        int a = scanner.nextInt();
-        System.out.println("Enter score of " + b1 + " team: ");
-        int b = scanner.nextInt();
-        int max = (a >= b) ? a : b;
-        int percentage = 100 * max / (a + b);
-        String leader = (a > b) ? a1 : b1;
-        String looser = (a < b) ? a1 : b1;
-        if (a == b) {
+        String team1 = args[0], team2 = args[1];
+        int score1 = Integer.parseInt(args[2]);
+        int score2 = Integer.parseInt(args[3]);
+        int max = (score1 >= score2) ? score1 : score2;
+        int percentage = 100 * max / (score1 + score2);
+        String leader = (score1 > score2) ? team1 : team2;
+        String looser = (score1 < score2) ? team1 : team2;
+        if (score1 == score2) {
             System.out.println("Draw in game! Score is equal! ");
         } else {
             System.out.println(leader + " is " + percentage + "% ahead, while " + looser + " is " + percentage + "% behind.");
