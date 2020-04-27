@@ -6,10 +6,11 @@ public class MaxValue {
         int a = Integer.parseInt(args[0]);
         int b = Integer.parseInt(args[1]);
         int c = Integer.parseInt(args[2]);
-        int result = a > b ? a > c ? a : c : b > c ? b : c;
+        int result1 = a > b ? a : b;
+        int result2 = result1 > c ? result1 : c;
         System.out.println("Your first entered value is: " + a);
         System.out.println("Your second entered value is: " + b);
         System.out.println("Your third entered value is: " + c);
-        System.out.println("Max entered value is: " + result);
+        System.out.println("Max entered value is: " + result2);
     }
 }

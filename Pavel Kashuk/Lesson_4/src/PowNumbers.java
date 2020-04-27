@@ -7,13 +7,7 @@ public class PowNumbers {
         int b = Integer.parseInt(args[1]);
         int pow = (int) Math.pow(a, b);
         int c = Integer.parseInt(args[2]);
-        String binary = Integer.toBinaryString(pow);
-        String octal = Integer.toOctalString(pow);
-        String hex = Integer.toHexString(pow);
-        String res = c == 2 ? binary : c == 8 ? octal : c == 16 ? hex : c == 10 ? String.valueOf(pow) : "Entered system doesn't exist";
-        System.out.println("Your first entered value is: " + a);
-        System.out.println("Your second entered value is: " + b);
-        System.out.println(a + " in " + b + " degree is: " + pow);
-        System.out.println(res);
+        String result = Integer.toString(pow,c);
+        System.out.println(result);
     }
 }
