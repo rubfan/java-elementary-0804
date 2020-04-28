@@ -1,5 +1,7 @@
 public class task1 {
     public static void main(String[] args) {
-        System.out.println(Integer.parseInt(args[0]) + Integer.parseInt(args[1]));
+    	int number1 = Integer.parseInt(args[0]);
+    	int number2 = Integer.parseInt(args[1]);
+        System.out.println(number1 + number2);
 	}
 }
