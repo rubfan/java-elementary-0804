@@ -5,16 +5,16 @@ public class calculator {
         } else {
             float firstNumber = Float.parseFloat(args[0]);
             float secondNumber = Float.parseFloat(args[2]);
-            String mathOperator = args[1];
-            if (mathOperator.equals("*")) {
+            char mathOperator = args[1].charAt(0);
+            if (mathOperator == '*') {
                 System.out.println(firstNumber * secondNumber);
-            } else if (mathOperator.equals("/")) {
+            } else if (mathOperator == '/') {
                 System.out.println(firstNumber / secondNumber);
-            } else if (mathOperator.equals("+")) {
+            } else if (mathOperator == '+') {
                 System.out.println(firstNumber + secondNumber);
-            } else if (mathOperator.equals("*")) {
+            } else if (mathOperator == '*') {
                 System.out.println(firstNumber - secondNumber);
-            } else if (mathOperator.equals("%")) {
+            } else if (mathOperator == '%') {
                 System.out.println(firstNumber % secondNumber);
             }
         }
