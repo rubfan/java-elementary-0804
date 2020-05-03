@@ -1,4 +1,5 @@
 package com.company;
+
 public class HomeworkLesson6 {
     public static void main(String[] args) {
 //          1) Создайте программу, выводящую на экран все четырёхзначные
@@ -33,12 +34,14 @@ public class HomeworkLesson6 {
     }
 
     public static void firstTask() {
+        System.out.println("_____________ TASK 1 ____________");
         for (int i = 1000; i < 10000; i += 3) {
             System.out.println(i);
         }
     }
 
     public static void secondTask() {
+        System.out.println("_____________ TASK 2 ____________");
         int counter = 0;
         for (int i = 1; ; i += 2) {
             System.out.println(i);
@@ -50,19 +53,27 @@ public class HomeworkLesson6 {
     }
 
     public static void thirdTask() {
+        System.out.println("_____________ TASK 3 ____________");
         for (int i = 90; i >= 0; i -= 5) {
             System.out.println(i);
         }
     }
 
     public static void fourthTask() {
+        System.out.println("_____________ TASK 4 ____________");
         int startNumber = 2;
-        for (int i = 0; i < 20; i++) {
+        int counter = 0;
+        for (int i = 0; ; i++) {
             System.out.println(startNumber << i);
+            counter++;
+            if (counter == 20) {
+                break;
+            }
         }
     }
 
     public static void fifthTask(int arrey[], int n) {
+        System.out.println("_____________ TASK 5 ____________");
         int sumElements = 0;
         for (int i = 0; i < n; i++) {
             sumElements += arrey[i];
@@ -71,6 +82,7 @@ public class HomeworkLesson6 {
     }
 
     public static void sixthTask(int arrey[]) {
+        System.out.println("_____________ TASK 6 ____________");
         int minElement = arrey[0];
         int maxElement = arrey[0];
         for (int i = 1; i < arrey.length; i++) {
@@ -86,7 +98,7 @@ public class HomeworkLesson6 {
     }
 
     public static void seventhTask(int arrey[]) {
-        //7) Найти сумму всех четных и сумму всех нечетных элементов массива
+        System.out.println("_____________ TASK 7 ____________");
         int sumEvenElements = 0;
         int sumOddElements = 0;
         for (int element : arrey) {
@@ -101,6 +113,7 @@ public class HomeworkLesson6 {
     }
 
     public static void eighthTask() {
+        System.out.println("_____________ TASK 8 ____________");
         int luckyTicketCounter = 0;
         for (int ticketNumber = 100_000; ticketNumber <= 999_999; ticketNumber++) {
             int leftPartSum = ticketNumber / 100_000 + (ticketNumber / 10_000) % 10 + (ticketNumber / 1_000) % 10;
@@ -113,14 +126,17 @@ public class HomeworkLesson6 {
     }
 
     public static void ninthTask(int bitNumber, int number) {
+        System.out.println("_____________ TASK 9 ____________");
         int binaryBitNumber = (int) Math.pow(2, (bitNumber - 1));
         int result = number | binaryBitNumber;
+        System.out.println("Entered bit number: " + bitNumber);
         System.out.println("Entered number: " + Integer.toBinaryString(number));
         System.out.println("Switched bit number: " + Integer.toBinaryString(result));
         System.out.println("Decimal result: " + result);
     }
 
     public static void tenthTask(int arrey[]) {
+        System.out.println("_____________ TASK 10 ____________");
         boolean sorted = false;
         int temp;
         while (!sorted) {
