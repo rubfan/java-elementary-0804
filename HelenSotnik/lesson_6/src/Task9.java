@@ -11,7 +11,7 @@ public class Main {
         bitNumber--;
         int n2 = 0;
         n2 = 1 << bitNumber;
-        n = n ^ n2;
+        n = n | n2;
         System.out.println("Result of change in binary: " + Integer.toBinaryString(n));
         System.out.println("Decimal result: " + n);
     }
