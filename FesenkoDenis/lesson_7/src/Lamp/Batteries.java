@@ -5,29 +5,30 @@ public class Batteries {
     private boolean isWorking;
 
     public void setBatteries(int batteries) {
-         this.batteries = batteries;
+        this.batteries = batteries;
     }
+
     public void showSetBattery() {
-            switch (batteries) {
-                case 3:
-                    System.out.println("Свечу белым");
-                case 2:
-                    System.out.println("Свечу красным");
-                case 1:
-                    System.out.println("Мигаю");
-                    isWorking = true;
-                    break;
-                default:
-                    System.out.println("Ошибка! Проверьте батарейки.");
-                    isWorking = false;
-            }
+        switch (batteries) {
+            case 3:
+                System.out.println("Shine white");
+            case 2:
+                System.out.println("Shine red");
+            case 1:
+                System.out.println("Blink");
+                isWorking = true;
+                break;
+            default:
+                System.out.println("Error! Check out batteries.");
+                isWorking = false;
+        }
     }
 
     public void showIsWorking() {
         if (isWorking) {
-            System.out.println("Рабочий");
+            System.out.println("Working");
         } else {
-            System.out.println("Нерабочий");
+            System.out.println("Not-working");
         }
     }
 }

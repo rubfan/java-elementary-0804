@@ -8,7 +8,6 @@ public class NameLamp {
     }
 
     public void outName() {
-        System.out.println("Фонарь " + nameOfLamp);
+        System.out.println("Lamp " + nameOfLamp);
     }
-
 }

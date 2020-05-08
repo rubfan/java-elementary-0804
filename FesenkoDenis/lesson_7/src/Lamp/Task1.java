@@ -6,7 +6,7 @@ public class Task1 {
 
     public static void main(String[] args) {
         Task1 lamp1 = new Task1();
-        lamp1.nameLamp.setName("Ночной");
+        lamp1.nameLamp.setName("For Night");
         lamp1.nameLamp.outName();
         lamp1.batteries.setBatteries(4);
         lamp1.batteries.showSetBattery();
