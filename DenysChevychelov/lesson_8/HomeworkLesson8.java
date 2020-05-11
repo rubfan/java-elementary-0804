@@ -40,6 +40,8 @@ public class HomeworkLesson8 {
 
         palindromeChecker(words);
 
+        palindromeCheckerByChars(words);
+
         /*4) Сделайте сортировку масива по возрастанию самостоятельно без использования готовых методов библиотек
         (можете взять алгоритм пузырьком), и посчитайте сколько на нее отводится циклов с повторяющимся кодом.
         Масив можно заполнять случайными double элементами с использованием (Math.random() * N) выражения.
@@ -110,7 +112,7 @@ public class HomeworkLesson8 {
     }
 
     public static void palindromeChecker(String words) {
-        String[] arrayWords = words.split(", ");
+        String[] arrayWords = words.split(",");
         System.out.println(Arrays.toString(arrayWords));
         boolean palindrome;
         int counter = 0;
@@ -182,4 +184,25 @@ public class HomeworkLesson8 {
         System.out.println("Second array: " + Arrays.toString(secondArray));
         System.out.println("Merged array: " + Arrays.toString(resultArray));
     }
+
+    public static void palindromeCheckerByChars(String words) {
+        String[] arrayWords = words.split(",");
+        System.out.println(Arrays.toString(arrayWords));
+        int counter = 0;
+        for (String word : arrayWords) {
+            String lowCaseWord = word.toLowerCase();
+            boolean palindrome = true;
+            for (int i = 0; i < lowCaseWord.length() / 2; i++) {
+                if (lowCaseWord.charAt(i) != lowCaseWord.charAt(lowCaseWord.length() - 1 - i)) {
+                    palindrome = false;
+                }
+            }
+            if (palindrome) {
+                counter++;
+            }
+        }
+        System.out.println("There are " + counter + " palindromes in the text.");
+    }
 }
+
+
