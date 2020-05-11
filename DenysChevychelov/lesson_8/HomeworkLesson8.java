@@ -60,6 +60,7 @@ public class HomeworkLesson8 {
 
         int[] firstArray = arraySorter();
         int[] secondArray = arraySorter();
+
         arraysMerger(firstArray, secondArray);
     }
 
@@ -204,5 +205,3 @@ public class HomeworkLesson8 {
         System.out.println("There are " + counter + " palindromes in the text.");
     }
 }
-
-
