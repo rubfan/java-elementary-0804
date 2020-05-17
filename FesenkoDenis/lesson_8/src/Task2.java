@@ -10,28 +10,28 @@ public class Task2 {
         int bF = 0;
         int ch = 0;
         for (int minus = 1; minus < (charStr.length); minus++) {
-            for (int i = 0; i < a - minus; i++) { //заполняю верхнюю строку слева направо
+            for (int i = 0; i < a - minus; i++) { //fills the top line from left to right
                 charStr[aF][bF] = ch;
                 if (i < a - minus) {
                     bF++;
                 }
                 ch++;
             }
-            for (int i = 0; i < b - minus; i++) { //заполняю столбец правый сверху вниз
+            for (int i = 0; i < b - minus; i++) { //fills the right column from down to up
                 charStr[aF][bF] = ch;
                 if (i < a - minus) {
                     aF++;
                 }
                 ch++;
             }
-            for (int i = 0; i < a - minus; i++) { //заполняю нижнюю строку справа на лево
+            for (int i = 0; i < a - minus; i++) { //fill the bottom line from right to left
                 charStr[aF][bF] = ch;
                 if (i < a - minus) {
                     bF--;
                 }
                 ch++;
             }
-            for (int i = 0; i < a - minus; i++) { //заполняю первую столбец снизу вверх
+            for (int i = 0; i < a - minus; i++) { //fill the left column from down to up
                 charStr[aF][bF] = ch;
                 if (i < a - minus) {
                     aF--;
@@ -43,7 +43,7 @@ public class Task2 {
             minus++;
             if (a % 2 != 0) {
                 charStr[(int) (charStr.length / 2 + 0.5)][(int) (charStr.length / 2 + 0.5)] = ch;
-                // вручную ввожу последний елемент
+                // inputing the last charecter
             }
         }
         showArray(charStr);

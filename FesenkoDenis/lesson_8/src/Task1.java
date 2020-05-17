@@ -5,7 +5,7 @@ public class Task1 {
         String[][] strings1 = new String[15][15];
         String[][] charStr = new String[15][15];
         strings[0][0] = 1;
-        strings1[0][0] = "1"; //вручную ввожу первый символ первой строки
+        strings1[0][0] = "1"; // input first item of line
         for (int i = 1; i < strings.length; i++) {
             strings1[0][i] = "";
         }
@@ -19,10 +19,10 @@ public class Task1 {
             }
         }
 
-        for (int k = 0; k < charStr.length; k++) { //revers
+        for (int k = 0; k < charStr.length; k++) { // revers
             for (int l = charStr.length - 1, iter1 = 0; l >= 0; l--, iter1++) {
                 if (iter1 < charStr.length) {
-                    charStr[k][l] = strings1[k][iter1].replaceFirst("^0*", ""); //Вывод без первых нулей
+                    charStr[k][l] = strings1[k][iter1].replaceFirst("^0*", ""); //output without "0" at the beginning
                 }
             }
         }
