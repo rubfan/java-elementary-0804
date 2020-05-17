@@ -12,12 +12,10 @@ public class Task3 {
         newTriangle.perimeter();
         newTriangle.area();
 
-
         Shapes[] arr = {newCircle, newTriangle}; // array for 4 task
         int sumOfPerimeter = 0;
 
-        for (Shapes var : arr
-        ) {
+        for (Shapes var : arr) {
             sumOfPerimeter += var.perimeter() + var.area();
         }
         System.out.println("sum " + sumOfPerimeter);
@@ -65,5 +63,4 @@ class Triangle extends Shapes {
         System.out.println("perimeter = " + perimeter);
         return perimeter;
     }
-
 }
