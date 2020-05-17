@@ -6,7 +6,6 @@ package Lesson9;
  */
 
 public class Triangle extends Figure {
-    private static final String NAME = "Triangle";
 
     private double sideA;
     private double sideB;
@@ -27,33 +26,5 @@ public class Triangle extends Figure {
     @Override
     public double getPerimeter() {
         return (sideA + sideB + sideC);
-    }
-
-    public String getName() {
-        return NAME;
-    }
-
-    public double getSideA() {
-        return sideA;
-    }
-
-    public void setSideA(double sideA) {
-        this.sideA = sideA;
-    }
-
-    public double getSideB() {
-        return sideB;
-    }
-
-    public void setSideB(double sideB) {
-        this.sideB = sideB;
-    }
-
-    public double getSideC() {
-        return sideC;
-    }
-
-    public void setSideC(double sideC) {
-        this.sideC = sideC;
     }
 }
