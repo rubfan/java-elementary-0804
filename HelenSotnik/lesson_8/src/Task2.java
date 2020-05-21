@@ -4,14 +4,17 @@ public class Task2 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number of strings in 2dim array");
-        int n1 = scanner.nextInt();
+        int a = scanner.nextInt();
         System.out.println("Enter number of columns in 2dim array");
-        int n2 = scanner.nextInt();
+        int b = scanner.nextInt();
+        snakeFillingArray(a, b);
+    }
+
+    private static void snakeFillingArray(int n1, int n2) {
         int[][] arr = new int[n1][n2];
         int number = 1;
         int a = 1;
         int b = 1;
-
         for (int j = 0; j < n2; j++) {
             arr[0][j] = number;
             number++;
