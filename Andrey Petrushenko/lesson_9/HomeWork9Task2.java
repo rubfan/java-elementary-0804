@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HomeWork_9_2 {
+public class HomeWork9Task2 {
     public static void main(String[] args) {
         System.out.println("Enter your text");
         Scanner scan = new Scanner(System.in);
@@ -10,7 +10,7 @@ public class HomeWork_9_2 {
             shortName(s);
     }
 
-    public static void shortName(String s) {
+    private static void shortName(String s) {
         if (s.length() > 4) {
             int l = s.length() - 2;
             String num = Integer.toString(l);
