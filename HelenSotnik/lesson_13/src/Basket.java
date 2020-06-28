@@ -9,11 +9,11 @@ public class Basket {
         this.productsInBasket = products;
     }
 
-    public Product[] getProducts() {
+    protected Product[] getProducts() {
         return productsInBasket;
     }
 
-    public void setProducts(Product[] basketPr) {
+    protected void setProducts(Product[] basketPr) {
         this.productsInBasket = basketPr;
     }
 
