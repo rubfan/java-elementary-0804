@@ -3,9 +3,9 @@ package Task1;
 import java.util.Arrays;
 
 public class Product {
-    private final String nameProduct;
-    private final int price;
-    private final int rating;
+    private String nameProduct;
+    private int price;
+    private int rating;
 
     public Product(String nameProduct, int price, int rating) {
         this.nameProduct = nameProduct;
@@ -60,7 +60,15 @@ public class Product {
 
 
 class Basket {
-    static Product[] basketArray;
+    private static Product[] basketArray;
+
+    public static Product[] getBasketArray() {
+        return basketArray;
+    }
+
+    public static void setBasketArray(Product[] basketArray) {
+        Basket.basketArray = basketArray;
+    }
 
     public Basket(Product[] product) {
         basketArray = new Product[product.length];
@@ -79,9 +87,33 @@ class Basket {
 }
 
 class User {
-    String login;
-    String pass;
-    Basket objBascet;
+    private String login;
+    private String pass;
+    private Basket objBascet;
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
+    }
+
+    public String getPass() {
+        return pass;
+    }
+
+    public void setPass(String pass) {
+        this.pass = pass;
+    }
+
+    public Basket getObjBascet() {
+        return objBascet;
+    }
+
+    public void setObjBascet(Basket objBascet) {
+        this.objBascet = objBascet;
+    }
 
     @Override
     public String toString() {
@@ -96,8 +128,8 @@ class User {
 class Interface {
     public static void main(String[] args) {
         User user = new User();
-        user.login = "den";
-        user.pass = "1111";
+        user.setLogin("den");
+        user.setPass("1111");
 
         Product product1 = new Product("IphoneX", 999, 8);
         Product product2 = new Product("Iphone8", 699, 5);
@@ -115,7 +147,7 @@ class Interface {
 
         Basket basket = new Basket(toBuy);
         System.out.println(basket.info());
-        user.objBascet = basket;
+        user.setObjBascet(basket);
 
         System.out.println(user.toString());
     }
