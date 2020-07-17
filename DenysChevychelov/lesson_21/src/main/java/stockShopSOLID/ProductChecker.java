@@ -2,7 +2,6 @@ package stockShopSOLID;
 
 import java.util.List;
 
-//Dependency Inversion Principle
 public class ProductChecker implements Checker {
     //Single Responsibility Principle
     public int checkProduct(List<Product> productsList, Product product) {

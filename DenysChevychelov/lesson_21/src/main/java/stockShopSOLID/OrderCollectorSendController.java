@@ -2,14 +2,14 @@ package stockShopSOLID;
 
 import java.util.List;
 
-public class OrderSendController implements CollectorOrder, OrderSender {
+public class OrderCollectorSendController implements OrderCollector, OrderSender {
     //Dependency Inversion Principle
     private ProductChecker pc;
     private ProductPreparer pp;
 
-    public OrderSendController(ProductChecker pc, ProductPreparer pp) {
-        this.pc = pc;
-        this.pp = pp;
+    public OrderCollectorSendController() {
+        this.pc = new ProductChecker();
+        this.pp = new ProductPreparer();
     }
 
     public Product collectOrder(List<Product> productList, Product product) {

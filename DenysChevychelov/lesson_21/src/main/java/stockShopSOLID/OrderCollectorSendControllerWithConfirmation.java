@@ -2,13 +2,8 @@ package stockShopSOLID;
 
 import java.util.List;
 
-public class OrderSendControllerWithConfirmation extends OrderSendController implements ConfirmationSender {
+public class OrderCollectorSendControllerWithConfirmation extends OrderCollectorSendController implements ConfirmationSender {
     //Liskov’s Substitution Principle
-
-    public OrderSendControllerWithConfirmation(ProductChecker pc, ProductPreparer pp) {
-        super(pc, pp);
-    }
-
 
     @Override
     public Product collectOrder(List<Product> productList, Product product) {
