@@ -1,4 +1,4 @@
-package stockShopSOLID;
+package shopsolid;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package stockShopSOLID;
+package shopsolid;
 
 // Interface Segregation Principle
 public interface OrderSender {

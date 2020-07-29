@@ -1,4 +1,4 @@
-package stockShopSOLID;
+package shopsolid;
 
 public class Product {
     private String productName;
