@@ -1,4 +1,4 @@
-package factoryMethod;
+package factorym;
 
 public class Report {
     private String type;

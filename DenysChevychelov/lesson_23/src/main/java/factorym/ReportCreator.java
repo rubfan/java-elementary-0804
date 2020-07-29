@@ -1,4 +1,4 @@
-package factoryMethod;
+package factorym;
 
 public interface ReportCreator {
     Report createReport();

@@ -1,4 +1,4 @@
-package abstractFactory;
+package abstractf;
 
 public class VolkswagenFactory implements Factory {
     public Sedan createSedan() {

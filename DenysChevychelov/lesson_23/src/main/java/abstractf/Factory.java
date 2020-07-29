@@ -1,4 +1,4 @@
-package abstractFactory;
+package abstractf;
 
 public interface Factory {
     Sedan createSedan();

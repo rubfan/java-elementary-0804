@@ -1,4 +1,4 @@
-package abstractFactory;
+package abstractf;
 
 public class AbstractCarFactory implements Factory {
     private Factory factory;

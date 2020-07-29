@@ -1,9 +1,9 @@
-package factoryMethod;
+package factorym;
 
-public class ExcelReport implements ReportCreator {
+public class PDFReport implements ReportCreator {
     private Report report;
 
-    public ExcelReport(String type) {
+    public PDFReport(String type) {
         this.report = new Report(type);
     }
 
@@ -17,7 +17,7 @@ public class ExcelReport implements ReportCreator {
 
     @Override
     public String toString() {
-        return "ExcelReport{" +
+        return "PDFReport{" +
                 "report=" + report +
                 '}';
     }

@@ -1,4 +1,4 @@
-package abstractFactory;
+package abstractf;
 
 public interface Pickup {
     void setTypePickup();

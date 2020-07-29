@@ -1,4 +1,4 @@
-package abstractFactory;
+package abstractf;
 
 public class DodgeFactory implements Factory {
     public Sedan createSedan() {

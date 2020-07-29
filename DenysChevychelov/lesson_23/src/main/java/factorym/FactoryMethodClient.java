@@ -1,4 +1,4 @@
-package factoryMethod;
+package factorym;
 
 public class FactoryMethodClient {
     public static void main(String[] args) {

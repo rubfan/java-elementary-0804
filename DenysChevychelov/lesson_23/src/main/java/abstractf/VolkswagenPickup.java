@@ -1,10 +1,10 @@
-package abstractFactory;
+package abstractf;
 
-public class DodgePickup implements Pickup {
-    private final String TRADEMARK = "Dodge";
+public class VolkswagenPickup implements Pickup {
+    private final String TRADEMARK = "Volkswagen";
     private String type;
 
-    public DodgePickup() {
+    public VolkswagenPickup() {
         setTypePickup();
     }
 
@@ -14,7 +14,7 @@ public class DodgePickup implements Pickup {
 
     @Override
     public String toString() {
-        return "DodgePickup{" +
+        return "VolkswagenPickup{" +
                 "TRADEMARK='" + TRADEMARK + '\'' +
                 ", type='" + type + '\'' +
                 '}';

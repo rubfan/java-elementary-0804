@@ -1,4 +1,4 @@
-package abstractFactory;
+package abstractf;
 
 public class DodgeSedan implements Sedan {
     private final String TRADEMARK = "Dodge";

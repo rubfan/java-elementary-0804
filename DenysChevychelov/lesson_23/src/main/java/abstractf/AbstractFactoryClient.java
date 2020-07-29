@@ -1,4 +1,4 @@
-package abstractFactory;
+package abstractf;
 
 public class AbstractFactoryClient {
     public static void main(String[] args) {
